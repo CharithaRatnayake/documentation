@@ -64,24 +64,25 @@ This interface is a response object of CostMatrix function in ISimsAppCallback. 
 
 | Data Type | Functions/ Variable. |
 | --- | --- |
-| String | methodName |
+| String | ```methodName``` |
 || Transaction method (Eg. MCWILL, SoftSim, GSM, CT/McWill, CT/SoftSim, CT/GSM, CT/WIFI). |
-| String | typeName |
+| String | ```typeName``` |
 || Transaction type. (Eg. CALL/ DATA/ SMS). |
-| String | operatorName |
+| String | ```operatorName``` |
 || Name of the operator. |
-| double | amount |
+| double | ```amount``` |
 || Available resource amount. |
-| double | cost |
+| double | ```cost``` |
 || Cost per resource. |
-| long | validTime |
+| long | ```validTime``` |
 || Cost matrix valid time. |
-| long | createdAt |
+| long | ```createdAt``` |
 || Data created time. |
-| long | updatedAt |
+| long | ```updatedAt``` |
 || Data updated time. |
-| int | priceOrder |
+| int | ```priceOrder``` |
 || The unique order of the total price about the transaction method. |
+
 
 **AIDL Source Code**
 
