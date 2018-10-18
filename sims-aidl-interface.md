@@ -1,4 +1,4 @@
-# Documentation of SIMS AIDL interfaces v(1.0.2) #
+# Documentation of SIMS AIDL interfaces v(1.0.3) #
 Package name: _com.cootf.sims_
 
 This documentation is about the interface for communication with SIMS application.  
@@ -64,22 +64,24 @@ This interface is a response object of CostMatrix function in ISimsAppCallback. 
 
 | Data Type | Functions/ Variable. |
 | --- | --- |
-| String | ```methodName``` |
+| String | methodName |
 || Transaction method (Eg. MCWILL, SoftSim, GSM, CT/McWill, CT/SoftSim, CT/GSM, CT/WIFI). |
-| String | ```typeName``` |
+| String | typeName |
 || Transaction type. (Eg. CALL/ DATA/ SMS). |
-| String | ```operatorName``` |
+| String | operatorName |
 || Name of the operator. |
-| String | ```amount``` |
+| double | amount |
 || Available resource amount. |
-| String | ```cost``` |
+| double | cost |
 || Cost per resource. |
-| String | ```validTime``` |
+| long | validTime |
 || Cost matrix valid time. |
-| String | ```createdAt``` |
+| long | createdAt |
 || Data created time. |
-| String | ```updatedAt``` |
+| long | updatedAt |
 || Data updated time. |
+| int | priceOrder |
+|| The unique order of the total price about the transaction method. |
 
 **AIDL Source Code**
 
