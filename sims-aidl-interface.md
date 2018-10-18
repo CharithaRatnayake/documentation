@@ -81,7 +81,7 @@ This interface is a response object of CostMatrix function in ISimsAppCallback. 
 | long | ```updatedAt``` |
 || Data updated time. |
 | int | ```priceOrder``` |
-|| The unique order of the total price about the transaction method. |
+|| The unique order of the total price about the transaction method. 0 = High priority, 1 = Medium priority, 2 = Low priority |
 
 
 **AIDL Source Code**
